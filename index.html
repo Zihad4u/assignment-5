@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+    <!-- nav bar -->
+    <div class="px-[40px] ">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+
+                </div>
+                <a class=" lg:font-extrabold lg:text-4xl font-raleway font-[" Raleway", sans-serif;]">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-[rgb(232,250,229)] text-[#1DD100] border-[1px] border-[#97ea89] ">Bus <img
+                        src="images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- nav bar end -->
+    <!-- banner section -->
+    <div class="relative px-[40px]">
+        <img src="images/banner.png" alt="" class="w-full">
+        <h1
+            class=" font-extrabold  absolute top-[110px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[64px] text-white w-[742px] text-center font-bold">
+            End-to-End Travel with</h1>
+        <h1
+            class="absolute top-[180px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-[#1DD100] font-extrabold w-[742px] text-center text-[64px] ">
+            P Paribahan</h1>
+        <p class="absolute top-[258px] w-[590px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">Yes,
+            you can run unit tests and view the results directly within the app. The</p>
+        <p
+            class="absolute top-[290px] w-[590px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+            integrated testing features allow for a streamlined .</p>
+        <!-- <button class="btn absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">Success</button> -->
+        <div onclick="scrollToSetDiv()">
+            <button
+                class="  w-[170px] h-[65px] rounded-[12px] absolute left-1/2  -translate-x-1/2  top-[365px] bg-[#1DD100] text-[#030712] font-bold border-none ">
+                Buy Tickets</button>
+        </div>
+    </div>
+    <!-- banner section end -->
+    <!-- best offer and cupon section -->
+    <div class="mt-[50px] px-[40px]  ">
+        <div>
+            <h3 class="font-bold text-[48px] text-center">Best offers for you</h3>
+        </div>
+        <div class="w-[100%] mt-10 flex gap-8  ">
+            <div class="w-[50%] h-[220px]  bg-[#FFBF0F] rounded-3xl flex justify-between ">
+                <div class="flex flex-col justify-center items-center w-1/2 ">
+                    <div>
+                        <h3 class="font-black text-[35px]">15% OFF</h3>
+                        <p class="font-semibold text-[20px]">on your next purchase</p>
+                        <p class="font-medium text-[18px] text-[#816310]">use by January 2024</p>
+                    </div>
+                </div>
+                <div class="">
+                    <img class="w-[55px] h-[220px] mb-[200px] " src="images/info-devider.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center w-1/2 ">
+                    <div>
+                        <h3 class="font-bold text-[32px]">NEW15</h3>
+                        <p class="font-medium text-[18px] text-[#816310]">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[50%] h-[220px]  bg-[#F78C9C] rounded-3xl flex justify-between ">
+                <div class="flex flex-col justify-center items-center w-1/2 ">
+                    <div>
+                        <h3 class="font-black text-[35px]">20% OFF</h3>
+                        <p class="font-semibold text-[20px]">on your next purchase</p>
+                        <p class="font-medium text-[18px] text-[#816310]">use by January 2024</p>
+                    </div>
+                </div>
+                <div class="">
+                    <img class="w-[55px] h-[220px] mb-[200px] " src="images/info-devider.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center w-1/2 ">
+                    <div>
+                        <h3 class="font-bold text-[32px]">Couple 20</h3>
+                        <p class="font-medium text-[18px] text-[#816310]">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center mt-[62px] ">
+            <p
+                class="btn w-[200px] h-[60px] bg-white border rounded-xl border-[#1DD100] text-[20px] font-bold text-center text-green-500 ">
+                See All Offers</p>
+        </div>
+    </div>
+    <!-- best offer section end -->
+    <!-- bus ticket div -->
+    <div
+        class="w-fulll pl-[60px] pr-[60px]  h-full border-[1px] border-[#1DD100] rounded-t-[88px] rounded-b-none bg-[#F7F8F8]  mt-[80px]">
+        <!-- ph parivahan -->
+        <div class="w-fulll  text-center mt-[80px]">
+            <h3 class="text-[48px] font-bold  "> P.H Paribahan</h3>
+            <div class=" w-full flex justify-center mt-[24px]">
+                <p class="text-[#65676e] font-[18px] text-center w-[600px] h-[60px]">Yes, you can run unit tests and
+                    view the results directly within the app. The integrated testing features allow for a streamlined .
+                </p>
+            </div>
+        </div>
+        <!-- green line paribohon -->
+        <div class="bg-[#FFFFFF] w-full  rounded-[24px]  h-[350px] flex ">
+            <div class="w-[80%] ">
+
+                <div class="flex justify-between p-[32px]">
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="images/bus-logo.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text=[32px] font-bold">Greenline Paribahan</h3>
+                            <p class="font-normal text-[15px] text-[#686a71]">Coach-009-WEB ! AC_Business</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-active bg-[#1DD10026] text-[#1DD100] font-medium border-none"><img
+                                src="images/seat-green.png" alt=""><span id="seatLeft">40</span> Seats left</button>
+                    </div>
+                </div>
+                <div class="bg-[#F7F8F8] h-[200px] ml-[32px] mb-[32px] p-6 rounded-[24px]  w-[93%]   ">
+                    <div class=" flex justify-between p-3 ">
+                        <h4 class="font-[18px] font-semibold text-[#65676e]">Route</h4>
+                        <p class="font-[18px] font-semibold">Dhaka - Sylhet</p>
+                    </div>
+                    <div class="border-[1px] border-dotted">
+
+                    </div>
+                    <div class=" flex justify-between p-3 ">
+                        <h4 class="font-[18px] font-semibold text-[#65676e]">Route</h4>
+                        <p class="font-[18px] font-semibold">9:00 PM</p>
+                    </div>
+                    <div class="border-[1px] border-dotted">
+
+                    </div>
+                    <div class="flex justify-between gap-4 p-3">
+                        <p class="btn">Boarding Point - Laxmipur</p>
+                        <p class="btn">Dropping Point - Bogura</p>
+                        <p class="btn">Est. Time - 11 Hour</p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <img class="w-[70px] h-[350px]  " src="images/info-devider.png" alt="">
+            </div>
+            <div class=" w-[20%] flex flex-col justify-center items-center">
+                <img src="images/fare.png" alt="">
+                <h4 class="font-bold text-[32px]">550 Taka</h4>
+                <p class="text-[#686a71] font-semibold">Per Seat</p>
+            </div>
+        </div>
+        <!-- select your seta div -->
+        <div id="paymentSuccess"
+            class="w-[1000px] absolute  h-[600px] hidden  mt-[150px] ml-[190px] flex justify-center items-center gap-6 ">
+            <!-- payment success -->
+            <div class="w-[700px] h-[400px] bg-[#FFFFFF] flex justify-center items-center flex-col ">
+                <img src="images/success.png" alt="">
+                <h2 class="text-[24px] text-[#27AE60] font-bold">SUCCESS</h2>
+                <h3 class="text-[20px] font-medium w-[500px] text-center">Thank you for Booking Our Bus Seats. We are
+                    working hard to find the best service and deals for you.</h3>
+                <p class="text-[18px] text-[#4a4a4a] mt-3 ">Shortly you will find a confirmation in your email.</p>
+                <button id="paymentBtn" class="btn mt-3">Continue</button>
+            </div>
+        </div>
+        <div id="setDiv" class="bg-[#FFFFFF] flex rounded-[24px] w-[100%] h-auto mt-[60px] p-[30px]  ">
+            <!-- left side div -->
+            <div class="w-[68%] h-full">
+                <!-- top div -->
+                <div class="w-full">
+                    <div>
+                        <p class="font-semibold text-[24px]">Select Your Seat</p>
+                    </div>
+                    <div class="border-[1px] border-dotted mt-8">
+                    </div>
+                    <div class="w-full flex justify-between mt-12 ">
+                        <div class=" flex">
+                            <img src="images/seat-gray.png" alt="">
+                            <p class="text-[#818388] text-[18px] font-medium">Available</p>
+                        </div>
+                        <!-- <div class="border-[1px] border-dotted">
+                        </div> -->
+                        <div class=" flex">
+                            <img src="images/seat-green-filled.png" alt="">
+                            <p class="text-[#1DD100] text-[18px] font-medium">Selected</p>
+                        </div>
+                    </div>
+                    <div class="border-[1px] border-dotted mt-8">
+                    </div>
+                    <div class="w-full flex justify-end mt-4 ">
+                        <button class="btn btn-square w-[110px] mr-4  ">
+                            <img src="images/tabler-icon-steering-wheel.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <!-- bottom div -->
+                <div class="flex">
+                    <div id="experiment" class="w-[10%] grid grid-rows-3 gap-8 mt-2 ">
+                        <p class="p-4">A</p>
+                        <p class="p-4">B</p>
+                        <p class="p-4">C</p>
+                        <p class="p-4">D</p>
+                        <p class="p-4">E</p>
+                    </div>
+                    <div class="w-[40%] grid grid-cols-2 mt-2 gap-8">
+                        <button id="btn" class="btn butto">A1</button>
+                        <button id="btn" class="btn butto">A2</button>
+                        <button id="btn" class="btn butto">B1</button>
+                        <button id="btn" class="btn butto">B2</button>
+                        <button id="btn" class="btn butto">C1</button>
+                        <button id="btn" class="btn butto">C2</button>
+                        <button id="btn" class="btn butto">D1</button>
+                        <button id="btn" class="btn butto">D2</button>
+                        <button id="btn" class="btn butto">E1</button>
+                        <button id="btn" class="btn butto">E2</button>
+                    </div>
+                    <div class="w-[50%] ml-20   ">
+                        <div class="w-full grid grid-cols-2 p-2  gap-12">
+                            <button id="btn" class="btn butto">A3</button>
+                            <button id="btn" class="btn butto">A4</button>
+                            <button id="btn" class="btn butto">B3</button>
+                            <button id="btn" class="btn butto">B4</button>
+                            <button id="btn" class="btn butto">C3</button>
+                            <button id="btn" class="btn butto">C4</button>
+                            <button id="btn" class="btn butto">D3</button>
+                            <button id="btn" class="btn butto">D4</button>
+                            <button id="btn" class="btn butto">E3</button>
+                            <button id="btn" class="btn butto">E4</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right side div -->
+            <div class="w-[32%] pl-3 ">
+                <div>
+                    <p class="font-semibold text-[24px]">Select Your Seat</p>
+                </div>
+                <div class="border-[1px] border-dotted mt-8">
+                </div>
+                <div class="bg-[#F7F8F8] mt-[150px] rounded-[12px] h-auto p-6 ">
+                    <div class="flex justify-between  ">
+                        <div class="flex">
+                            <p class="font-[18px] font-medium font-[#030712] w-[35px]">Seat</p>
+                            <p id="totalSet" class="bg-[#1DD100] text-center rounded-[5px] w-[20px]">0</p>
+                        </div>
+                        <p class="font-[18px] font-medium font-[#030712]">Class</p>
+                        <p class="font-[18px] font-medium font-[#030712]">Price</p>
+                    </div>
+                    <div class="border-[1px] border-dotted mt-4">
+                    </div>
+                    <div id="getThis" class="mt-4 text-[16px] h-auto text-[#03071299] font-normal ">
+                        <!-- this -->
+                    </div>
+                    <div class="border-[1px] border-dotted mt-4">
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <p class="font-[16px] font-medium text-[#030712]">Total price</p>
+                        <p id="totalPrice" class="font-[16px] font-medium text-[#030712]"><span id="totalPrice">0</span>
+                        </p>
+                    </div>
+                    <div id="hidInput" class="flex mt-4 ">
+                        <input class="w-[320px] h-[50px] pl-5 rounded-[10px] " placeholder="Have any copupon?"
+                            type="text" name="" id="input">
+                        <p id="apply" class="btn bg-[#1DD100] text-white">Apply</p>
+                    </div>
+                    <div class="flex justify-between mt-6 ">
+                        <p class="text-[16px] font-medium">Grand Total</p>
+                        <p id="grandTotal" class="font-medium">0</p>
+                    </div>
+                    <div class="w-full mt-3 ">
+                        <p id="nextButton" class="btn w-full bg-[#1DD100] text-white font-[20px] font-extrabold  ">Next
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <div class="flex justify-center" >
+        <div class="border-[1px] border-dashed absolute mt-[230px] w-[1470px] text-center "></div>
+    </div>
+    <div class="w-full h-[400px] bg-[#030712] flex justify-center items-center">
+        <div class=" w-[1500px] h-[250px] flex p-2 ">
+            <div class=" w-[50%] h-[50%]">
+                <h3 class="text-[#FFFFFF] text-[30px] font-bold ">P-Ticket</h3>
+                <p class="text-[#cdcdd0] text-[14px] w-[280px] pt-2 ">P-Ticket is a digital platform to make your daily
+                    commuting better.
+                </p>
+            </div>
+            <div class=" w-[50%] flex justify-end h-[50%]  ">
+                <div class=" w-[200px]">
+                    <p class="text-[#ffffff] font-semibold text-[20px] ">Download our app</p>
+                    <div class=" h-[56px] flex  w-[200px] mt-4 gap-2 ">
+                        <img src="images/playstore.png" alt="">
+                        <div>
+                            <h3 class="text-white">GET IT ON</h3>
+                            <p class="text-white">Google Play</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div>
+            <p></p>
+        </div>
+    </div>
+    
+    <script src="document.js"></script>
+</body>
+
+</html>
